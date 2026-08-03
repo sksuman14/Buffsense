@@ -16,7 +16,6 @@ Developed to address the critical need for affordable monitoring in the Indian d
   - Detailed activity duration formatting and chronological event logs.
   - Floating action button to download activity logs as standard CSVs.
 - **Dual-Mode Sync Support**: Built-in visual architectures explaining BLE Direct local sync and cellular Cloud Gateway relay.
-- **Showcase Demo Mode**: Pre-loaded mock data for nodes `150` to `158` (assigned to Gopal Gaushala, Ropar) covering a 7-month showcase range (`01-01-2026` to `30-07-2026`) for demonstration.
 
 ---
 
@@ -41,7 +40,7 @@ Active collar/tail nodes continuously stream raw sensor data to the central farm
 
 ---
 
-## 📍 Active Deployment Sites
+## 📍 Deployment Sites
 
 The dashboard visualizes live deployments across major locations:
 - Gopal Gaushala, Ropar
