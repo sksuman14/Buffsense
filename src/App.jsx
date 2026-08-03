@@ -986,7 +986,7 @@ function App() {
                               {loc.name}
                             </strong>
                             <div style={{ fontSize: '0.85rem', color: '#475569', display: 'flex', flexDirection: 'column', gap: '5px', marginBottom: '8px' }}>
-                              <span><strong>Active Nodes:</strong> {loc.deviceCount}</span>
+                              <span><strong>Nodes:</strong> {loc.deviceCount}</span>
                               <span><strong>Coordinates:</strong> {loc.position[0].toFixed(4)}, {loc.position[1].toFixed(4)}</span>
                             </div>
                           </div>
@@ -1003,7 +1003,6 @@ function App() {
                             </strong>
                             <div style={{ fontSize: '0.85rem', color: '#475569', display: 'flex', flexDirection: 'column', gap: '5px' }}>
                               <span><strong>Location:</strong> {dev.siteName}</span>
-                              <span><strong>Status:</strong> <span style={{color: '#22c55e'}}>Online</span></span>
                               <span><strong>Battery:</strong> {dev.battery}%</span>
                               <span><strong>Signal Strength:</strong> {dev.signal}%</span>
                               <span><strong>Last Sync:</strong> {dev.lastSeen}</span>
