@@ -1050,71 +1050,71 @@ function App() {
               
               <div className="architecture-grid" style={{ display: 'flex', flexDirection: 'column', gap: '2.5rem' }}>
                 {/* Mode 1 Card */}
-                <div className="mode-card" style={{ display: 'flex', flexWrap: 'wrap', gap: '2rem', background: 'rgba(255,255,255,0.015)', border: '1px solid var(--glass-border)', borderRadius: '16px', padding: '2rem', alignItems: 'center' }}>
+                <div className="mode-card">
                   {/* Left Side: Info */}
-                  <div style={{ flex: '1 1 55%', display: 'flex', flexDirection: 'column', gap: '1.25rem', minWidth: '320px' }}>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                      <h4 style={{ margin: 0, color: 'var(--text-main)', fontSize: '1.5rem', fontWeight: '700' }}>BLE Direct Node Sync</h4>
-                      <span className="badge badge-green" style={{ padding: '0.4rem 0.8rem', fontSize: '0.8rem' }}>Offline-First</span>
+                  <div className="mode-card-info">
+                    <div className="mode-card-header">
+                      <h4>BLE Direct Node Sync</h4>
+                      <span className="badge badge-green mode-card-badge">Offline-First</span>
                     </div>
-                    <p style={{ color: 'var(--text-muted)', fontSize: '0.96rem', margin: 0, lineHeight: 1.6 }}>
+                    <p className="mode-card-desc">
                       Collar and tail nodes track animal behavior and log metrics locally. Data is synchronised directly to a mobile device or handheld receiver using Bluetooth Low Energy (BLE) when in close range.
                     </p>
-                    <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-                      <li style={{ display: 'flex', gap: '8px', color: 'var(--text-muted)', fontSize: '0.9rem', lineHeight: 1.5 }}>
+                    <ul className="mode-card-list">
+                      <li className="mode-card-list-item">
                         <span style={{ color: '#22c55e', fontWeight: 'bold' }}>✓</span>
                         <span><strong>Zero infrastructure overhead:</strong> Perfect for small-scale pasture-based setups or farms with no permanent internet access.</span>
                       </li>
-                      <li style={{ display: 'flex', gap: '8px', color: 'var(--text-muted)', fontSize: '0.9rem', lineHeight: 1.5 }}>
+                      <li className="mode-card-list-item">
                         <span style={{ color: '#22c55e', fontWeight: 'bold' }}>✓</span>
                         <span><strong>Offline behavior logging:</strong> Node sensors record rumination, activity, and rest cycles continuously.</span>
                       </li>
-                      <li style={{ display: 'flex', gap: '8px', color: 'var(--text-muted)', fontSize: '0.9rem', lineHeight: 1.5 }}>
+                      <li className="mode-card-list-item">
                         <span style={{ color: '#22c55e', fontWeight: 'bold' }}>✓</span>
                         <span><strong>Secure direct sync:</strong> Telemetry is securely pulled using a local mobile application.</span>
                       </li>
                     </ul>
-                    <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)', borderTop: '1px solid var(--glass-border)', paddingTop: '0.75rem', marginTop: '0.5rem' }}>
+                    <div className="mode-card-footer">
                       <strong>Core Hardware:</strong> Smart Collar & BLE Node
                     </div>
                   </div>
                   {/* Right Side: Visuals */}
-                  <div style={{ flex: '1 1 35%', background: 'radial-gradient(circle, rgba(59, 130, 246, 0.06) 0%, transparent 80%)', border: '1px solid rgba(255,255,255,0.04)', borderRadius: '12px', padding: '1.5rem', display: 'flex', justifyContent: 'center', alignItems: 'center', boxShadow: 'inset 0 0 20px rgba(255,255,255,0.01)', minWidth: '280px' }}>
+                  <div className="mode-card-visual mode-1">
                     <HardwareCarousel images={mode1Images} />
                   </div>
                 </div>
                 
                 {/* Mode 2 Card */}
-                <div className="mode-card" style={{ display: 'flex', flexWrap: 'wrap', gap: '2rem', background: 'rgba(255,255,255,0.015)', border: '1px solid var(--glass-border)', borderRadius: '16px', padding: '2rem', alignItems: 'center' }}>
+                <div className="mode-card">
                   {/* Left Side: Info */}
-                  <div style={{ flex: '1 1 55%', display: 'flex', flexDirection: 'column', gap: '1.25rem', minWidth: '320px' }}>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                      <h4 style={{ margin: 0, color: 'var(--text-main)', fontSize: '1.5rem', fontWeight: '700' }}>Cloud Gateway Pipeline</h4>
-                      <span className="badge badge-purple" style={{ padding: '0.4rem 0.8rem', fontSize: '0.8rem' }}>Real-Time Cloud</span>
+                  <div className="mode-card-info">
+                    <div className="mode-card-header">
+                      <h4>Cloud Gateway Pipeline</h4>
+                      <span className="badge badge-purple mode-card-badge">Real-Time Cloud</span>
                     </div>
-                    <p style={{ color: 'var(--text-muted)', fontSize: '0.96rem', margin: 0, lineHeight: 1.6 }}>
+                    <p className="mode-card-desc">
                       Collar and tail nodes transmit raw sensor data continuously to a central gateway. The gateway aggregates all herd telemetry and uploads it to the cloud server over a secure 4G cellular pipeline.
                     </p>
-                    <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-                      <li style={{ display: 'flex', gap: '8px', color: 'var(--text-muted)', fontSize: '0.9rem', lineHeight: 1.5 }}>
+                    <ul className="mode-card-list">
+                      <li className="mode-card-list-item">
                         <span style={{ color: '#a855f7', fontWeight: 'bold' }}>✓</span>
                         <span><strong>Continuous real-time streaming:</strong> Collar and tail nodes continuously transmit activity data to the central gateway via BLE.</span>
                       </li>
-                      <li style={{ display: 'flex', gap: '8px', color: 'var(--text-muted)', fontSize: '0.9rem', lineHeight: 1.5 }}>
+                      <li className="mode-card-list-item">
                         <span style={{ color: '#a855f7', fontWeight: 'bold' }}>✓</span>
                         <span><strong>Cellular cloud relay:</strong> The gateway aggregates telemetry and uploads it to the BuffSense cloud platform via a secure 4G cellular connection.</span>
                       </li>
-                      <li style={{ display: 'flex', gap: '8px', color: 'var(--text-muted)', fontSize: '0.9rem', lineHeight: 1.5 }}>
+                      <li className="mode-card-list-item">
                         <span style={{ color: '#a855f7', fontWeight: 'bold' }}>✓</span>
                         <span><strong>Automated alerts & remote access:</strong> Get instant 24/7 warnings, herd reports, and analytics from anywhere in the world.</span>
                       </li>
                     </ul>
-                    <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)', borderTop: '1px solid var(--glass-border)', paddingTop: '0.75rem', marginTop: '0.5rem' }}>
+                    <div className="mode-card-footer">
                       <strong>Core Hardware:</strong> Tail Nodes & BLE-4G Gateway
                     </div>
                   </div>
                   {/* Right Side: Visuals */}
-                  <div style={{ flex: '1 1 35%', background: 'radial-gradient(circle, rgba(168, 85, 247, 0.05) 0%, transparent 80%)', border: '1px solid rgba(255,255,255,0.04)', borderRadius: '12px', padding: '1.5rem', display: 'flex', justifyContent: 'center', alignItems: 'center', boxShadow: 'inset 0 0 20px rgba(255,255,255,0.01)', minWidth: '280px' }}>
+                  <div className="mode-card-visual mode-2">
                     <HardwareCarousel images={mode2Images} />
                   </div>
                 </div>
