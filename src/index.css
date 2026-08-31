@@ -798,6 +798,11 @@ tr:hover td {
   color: white;
 }
 
+/* Dark theme filter for OpenStreetMap tiles */
+.dark-tile-layer {
+  filter: brightness(0.6) invert(1) contrast(2.5) hue-rotate(200deg) saturate(0.3) brightness(0.75);
+}
+
 .map-btn svg {
   width: 18px;
   height: 18px;
